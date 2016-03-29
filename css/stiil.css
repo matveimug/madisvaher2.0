@@ -1,0 +1,309 @@
+@font-face {
+	font-family: 'madius_betaheavy';
+	src: url('/fonts/madius_0.5.56-web.eot');
+	src: url('/fonts/madius_0.5.56-web.eot?#iefix') format('embedded-opentype'), url('/fonts/madius_0.5.56-web.woff2') format('woff2'), url('/fonts/madius_0.5.56-web.woff') format('woff'), url('/fonts/madius_0.5.56-web.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@CHARSET "ISO-8859-1";
+
+/* Reset CSS
+ * --------------------------------------- */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+table {
+	border-spacing: 0;
+}
+fieldset,
+img {
+	border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-weight: normal;
+	font-style: normal;
+}
+strong {
+	font-weight: bold;
+}
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+caption,
+th {
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+q:before,
+q:after {
+	content: '';
+}
+abbr,
+acronym {
+	border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+
+html {
+	font-family: 'madius_betaheavy', sans-serif;
+	font-size: 3vh;
+}
+body {
+	color: #fff;
+}
+p {
+	font-size: 2em;
+	letter-spacing: 2px;
+}
+.intro p,
+.gal p,
+.section p {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.boop {
+	position: absolute;
+	z-index: -2;
+	height: 100%;
+	width: 100%;
+	background-color: aqua;
+	-webkit-transition: background 1s ease-out;
+	-moz-transition: background 1s ease-out;
+	-o-transition: background 1s ease-out;
+	transition: background 1s ease-out;
+}
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+.tilde {
+	letter-spacing: -.1923em;
+	margin-right: .249em;
+}
+h1 {
+	font-size: 3em;
+	margin-bottom: .34em;
+	width: auto;
+	border-bottom: .15em solid rgba(0, 255, 120, 1);
+	display: inline-block;
+	line-height: 1em;
+}
+h1#quote {
+	font-size: 5em;
+}
+.section {
+	text-align: center;
+}
+header {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	text-align: center;
+	color: #fff;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+}
+.madisvaher {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	margin: 0 auto;
+	transition: all .3s ease-in-out;
+	opacity: 1;
+	pointer-events: all;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+.madisvahersvg {
+	width: 100%;
+	height: 100%;
+	cursor: help;
+}
+.madisvahersvg #mustpind {
+	mix-blend-mode: multiply;
+}
+#tere {
+	margin-bottom: 1em;
+}
+#kontakt {
+	margin-top: 1em;
+}
+#menu li {
+	color: #fff;
+	font-size: .9em;
+	line-height: .9em
+}
+#menu li.active {
+	text-decoration: underline;
+}
+#menu li a {
+	text-decoration: none;
+	color: #fff;
+}
+#menu li.active a:hover {
+	background: rgba(0, 255, 100, 0.8);
+}
+#menu li:hover {
+	background: rgba(0, 255, 100, 0.8);
+}
+#menu li a,
+#menu li.active a {
+	padding: .5em 1.1em;
+	display: block;
+}
+#menu li.active a {}
+#menu {
+	position: fixed;
+	top: 0;
+	left: -30%;
+	z-index: 70;
+	padding: 0;
+	margin: 0;
+	width: 30%;
+	height: 100%;
+	background-color: rgba(0,0,0,1);
+	transition: all .2s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#menu-toggle {
+	position: fixed;
+	width: auto;
+	display: inline-block;
+	cursor: pointer;
+	pointer-events: all;
+	z-index: 60;
+	padding: .7em;
+	transition: all .1s ease-in-out;
+	line-height: .6em;
+}
+#menu-toggle p {
+	font-size: 1em;
+}
+.showmenu {
+	left: 0 !important;
+}
+#fullpage {
+	transition: left .1s ease-in-out;
+}
+.pageleft {
+	left: 15%;
+}
+.intro h1,
+.intro h2 {
+	font-size: 3em;
+}
+.hdrlink {
+	text-decoration: none;
+	font-weight: 700;
+	color: #fff;
+	text-transform: none;
+	letter-spacing: 1px;
+	padding: 12px 18px 12px 18px;
+	text-transform: uppercase;
+	box-shadow: none;
+}
+.hdrlink:hover {
+	text-decoration: none;
+	z-index: 1024;
+}
+.hdrlink:active,
+.hdrlink:focus {
+	text-decoration: none;
+}
+
+/*.slide-first { 
+	width: 12%!important;
+	margin-left: 6%;
+}*/
+
+.gal img,
+.intro img {
+	max-height: 90vh;
+	max-width: 90%;
+	min-width: 90%;
+	object-fit: contain;
+}
+.imageoverlay {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	background-image: url(/img/test.jpg);
+	background-size: cover;
+	box-shadow: inset 1000px 1000px 0 rgba(0, 0, 0, .8);
+}
+.vasakylal {
+	position: absolute;
+	left: 33vw;
+	top: 29vh;
+}
+.paremall {
+	position: absolute;
+	left: 45vw;
+	top: 60vh;
+	z-index: -1;
+}

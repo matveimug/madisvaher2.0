@@ -1,0 +1,50 @@
+@media screen and (orientation: portrait) and (max-width: 720px) {
+	html {
+		font-size: 3.5vw;
+	}
+	.intro p,
+	.gal p,
+	.section p {
+		width: 75%;
+		margin: 0 auto;
+		font-size: 1.5em;
+	}
+	.fp-controlArrow {
+		top: auto;
+		bottom: 45vh;
+	}
+	.fp-controlArrow.fp-prev {
+		left: 1vw;
+		width: 0;
+		border-width: 20px 25px 20px 7px;
+		border-color: transparent rgba(255, 255, 255, .2) transparent transparent;
+	}
+	.fp-controlArrow.fp-next {
+		right: 1vw;
+		border-width: 20px 7px 20px 25px;
+		border-color: transparent transparent transparent rgba(255, 255, 255, .2);
+	}
+	.madisvaher {
+		display: none;
+	}
+	#menu {
+		width: 100%;
+		left: -100%;
+		text-align: center;
+	}
+	.showmenu {
+	left: 0;
+	bottom: 0 !important;
+	}
+	#tere {
+		margin-bottom: 1em;
+	}
+	#kontakt {
+		margin-top: 1em;
+	}
+	#menu li {
+		color: #fff;
+		font-size: 1.3em;
+		line-height: .9em
+	}
+}
