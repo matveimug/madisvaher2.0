@@ -61,8 +61,8 @@ var goaway = function () {
 			   	"#madisvahersvg #mustpind #R"];
 	for (var i = 0; i < t2ht.length; i++) {
 	var xstroke = Math.floor((Math.random() * 300) + 50);
-	var x = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 10) + 3);
-	var y = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 10) + 3);
+	var x = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 100) + 3);
+	var y = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 100) + 3);
 	var sc = Math.floor((Math.random() * 300));
 
 	function scale() {
@@ -86,8 +86,8 @@ var goaway = function () {
 			   	"#madisvahersvg #valgejoon #R"];
 	for (var i = 0; i < t2ht2.length; i++) {
 	var xstroke = Math.floor((Math.random() * 300) + 50);
-	var x = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 10) + 3);
-	var y = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 10) + 3);
+	var x = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 100) + 3);
+	var y = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 100) + 3);
 	var sc = Math.floor((Math.random() * 300));
 
 	function scale() {
