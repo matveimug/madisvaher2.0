@@ -182,9 +182,12 @@ header {
 	height: 100%;
 	cursor: help;
 }
-.madisvahersvg #mustpind {
-	mix-blend-mode: multiply;
-	transform-origin: center;
+.madisvahersvg #mustpind #M, .madisvahersvg #mustpind #A, .madisvahersvg #mustpind #D, .madisvahersvg #mustpind #I, 
+.madisvahersvg #mustpind #S, .madisvahersvg #mustpind #V, .madisvahersvg #mustpind #A2, .madisvahersvg #mustpind #H, 
+.madisvahersvg #mustpind #E, .madisvahersvg #mustpind #R, .madisvahersvg #valgejoon #M, .madisvahersvg #valgejoon #A, 
+.madisvahersvg #valgejoon #D, .madisvahersvg #valgejoon #I, .madisvahersvg #valgejoon #S, .madisvahersvg #valgejoon #V, 
+.madisvahersvg #valgejoon #A2, .madisvahersvg #valgejoon #H, .madisvahersvg #valgejoon #E, .madisvahersvg #valgejoon #R {
+	transform-origin: 50% 50%;
 }
 #tere {
 	margin-bottom: 1em;
