@@ -184,6 +184,7 @@ header {
 }
 .madisvahersvg #mustpind {
 	mix-blend-mode: multiply;
+	transform-origin: center;
 }
 #tere {
 	margin-bottom: 1em;

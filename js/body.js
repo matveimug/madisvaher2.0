@@ -21,7 +21,7 @@ $(document).ready(function () {
 			'strokeRed': r,
 			'strokeGreen': g,
 			'strokeBlue': b,
-			opacity: .5
+			'opacity': .2,
 		}, 0)
 		.velocity({
 			'stroke-dashoffset': xstroke,
@@ -53,8 +53,14 @@ $(document).ready(function () {
 		});
 	//background animation stuff
 });
+
 var goaway = function () {
-	var xstroke = Math.floor((Math.random() * 300) + 50);
+	var t2ht = ["#madisvahersvg #mustpind #M", "#madisvahersvg #mustpind #A", "#madisvahersvg #mustpind #D", 
+				"#madisvahersvg #mustpind #I", "#madisvahersvg #mustpind #S", "#madisvahersvg #mustpind #V",
+			   	"#madisvahersvg #mustpind #A2", "#madisvahersvg #mustpind #H", "#madisvahersvg #mustpind #E",
+			   	"#madisvahersvg #mustpind #R"];
+	for (var i = 0; i < t2ht.length; i++) {
+	var xstroke = Math.floor((Math.random() * 150) + 50);
 	var x = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 10) + 3);
 	var y = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 10) + 3);
 	var sc = Math.floor((Math.random() * 300));
@@ -63,28 +69,43 @@ var goaway = function () {
 		result = sc + '%';
 		return result;
 	};
-	
-	$('#madisvahersvg #valgejoon #M').add('#madisvahersvg #valgejoon #A')
-		.velocity({
-			'stroke-dashoffset': xstroke,
-			'translateX': -x,
-			'translateY': -y,
-			'scale': scale
-		}, {
-			duration: 1000,
-			delay: 0,
-			easing: "ease-in-out"
-		});
-	$('#madisvahersvg #mustpind #M').add('#madisvahersvg #mustpind #A')
+	$(t2ht[i])
 		.velocity({
 			'translateX': x,
 			'translateY': y,
 			'scale': scale
 		}, {
 			delay: 0,
-			duration: 1000,
+			duration: 700,
 			easing: "ease-in-out"
 		});
+	};
+	var t2ht2 = ["#madisvahersvg #valgejoon #M", "#madisvahersvg #valgejoon #A", "#madisvahersvg #valgejoon #D", 
+				"#madisvahersvg #valgejoon #I", "#madisvahersvg #valgejoon #S", "#madisvahersvg #valgejoon #V",
+			   	"#madisvahersvg #valgejoon #A2", "#madisvahersvg #valgejoon #H", "#madisvahersvg #valgejoon #E",
+			   	"#madisvahersvg #valgejoon #R"];
+	for (var i = 0; i < t2ht2.length; i++) {
+	var xstroke = Math.floor((Math.random() * 150) + 50);
+	var x = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 10) + 3);
+	var y = Math.floor(((Math.random() < 0.5 ? -1 : 1) * 10) + 3);
+	var sc = Math.floor((Math.random() * 300));
+
+	function scale() {
+		result = sc + '%';
+		return result;
+	};
+	$(t2ht2[i])
+		.velocity({
+			'stroke-dashoffset': xstroke,
+			'translateX': -x,
+			'translateY': -y,
+			'scale': scale
+		}, {
+			duration: 700,
+			delay: 0,
+			easing: "ease-in-out"
+		});
+	};
 };
 
 // randomgradient
