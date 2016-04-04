@@ -8,18 +8,18 @@ $(document).ready(function () {
 		easing: 'easeInOutCubic',
 		keyboardScrolling: true,
 		fixedElements: '#header, .footer',
-		scrollingSpeed: 500,
+		scrollingSpeed: 300,
 		slidesNavigation: true,
         slidesNavPosition: 'bottom',
 		onLeave: function (index, nextIndex, direction) {
 			var leavingSection = $(this);
-			if (direction == 'down', 'up') {
+			if (index != 1 && direction == 'down', 'up') {
 				bgrand();
 				setTimeout(function () {
 					rand_color();
 				}, 50);
 				goaway();
-				//$( "#menu" ).removeClass("showmenu");
+				$( "#menu" ).removeClass("showmenu");
 			}
 			if (index == 1 && direction == 'down') {
 				setTimeout(function () {
@@ -37,8 +37,6 @@ $(document).ready(function () {
 
 			//using index
 			if (index == 1) {
-				fillrand();
-				strokerand();
 			}
 		},
 	});

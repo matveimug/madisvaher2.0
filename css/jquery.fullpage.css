@@ -69,23 +69,23 @@ html.fp-enabled,
     z-index: 4;
     top: 50%;
     cursor: pointer;
-    width: 1em;
-    height: 1em;
+    width: 3em;
+    height: 3em;
     margin-top: -38px;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 2vw;
-    border-left: .7em solid white;
-    border-bottom: .7em solid white;
+    left: 3vw;
+    border-left: .3em solid white;
+    border-bottom: .3em solid white;
     transform: rotate(45deg);
 }
 .fp-controlArrow.fp-next {
-    right: 2vw;
-    border-right: .7em solid white;
-    border-top: .7em solid white;
+    right: 3vw;
+    border-right: .3em solid white;
+    border-top: .3em solid white;
     transform: rotate(45deg);
 }
 .fp-scrollable {
